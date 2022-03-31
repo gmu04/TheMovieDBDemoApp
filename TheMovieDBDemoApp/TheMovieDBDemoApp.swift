@@ -1,6 +1,7 @@
 // TheMovieDBDemoApp.swift by Gokhan Mutlu on 31.03.2022
 
 import SwiftUI
+import Firebase
 
 @main
 struct TheMovieDBDemoApp: App {
@@ -13,6 +14,9 @@ struct TheMovieDBDemoApp: App {
 	
 	init() {
 		navigationBarSetup()
+		
+		#warning("Firebase Analytics and Crashlytics are added for demonstration of Cocapods use.")
+		//FirebaseApp.configure()
 	}
 	
 	
