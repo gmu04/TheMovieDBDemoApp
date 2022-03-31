@@ -17,18 +17,36 @@ struct MovieDetailView: View {
 	}
 	
     var body: some View {
-			VStack{
+		VStack(alignment:.leading){
 				if let movieVM = movieListDetailVM.movieVM{
 					AsyncImageView(url: movieVM.poster_path, width: .infinity, height: UIScreen.main.bounds.height*0.3, isCornerRadius: false)
 						.padding(.bottom, 10)
 					
+					
+					HStack{
+						Image("imdb")
+							.resizable()
+							.frame(width: 49, height: 24)
+							
+						Image(systemName: "star.fill")
+							.foregroundColor(.yellow)
+						
+						Text(String(format: "%0.0f", (movieListDetailVM.movieVM?.vote_average ?? 0)))
+						Text("/ 10")
+							.foregroundColor(.gray)
+						
+						Text(movieListDetailVM.movieVM?.release_date ?? "")
+					}
+					.font(.custom("SF Pro Text", size: 13))
+					.padding(.horizontal, 16)
+					
 					Text(movieVM.name)
 						.font(.title)
-						.padding(.horizontal, 10)
+						.padding(.horizontal, 16)
 					
 					ScrollView{
 						Text(movieVM.overview)
-							.padding(.horizontal, 10)
+							.padding(.horizontal, 16)
 					}
 				}
 				

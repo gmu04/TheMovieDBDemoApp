@@ -32,6 +32,15 @@ struct MovieListView: View {
 							EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 16))
 					}
 				}
+				.refreshable {
+					print("-- Pull to refresh --")
+					
+					movieListVM.getNowPlayingMovies()
+					
+					//TODO:pagination handling is not clear in the documentation...
+					movieListVM.getUpcomingMovies(1)
+					
+				}
 				.listStyle(.plain)
 			}
 			//.frame(width: UIScreen.main.bounds.size.width, alignment: .center)
