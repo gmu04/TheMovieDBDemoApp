@@ -14,6 +14,12 @@
 		F741D85727F57D8C002053F9 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D85627F57D8C002053F9 /* HttpClient.swift */; };
 		F741D85927F57D9B002053F9 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D85827F57D9B002053F9 /* Session.swift */; };
 		F741D85B27F57DDE002053F9 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D85A27F57DDE002053F9 /* ApiError.swift */; };
+		F741D85D27F5816F002053F9 /* URL + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D85C27F5816F002053F9 /* URL + ext.swift */; };
+		F741D85F27F581E1002053F9 /* TMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D85E27F581E1002053F9 /* TMDBService.swift */; };
+		F741D86127F58576002053F9 /* TMDBKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D86027F58576002053F9 /* TMDBKey.swift */; };
+		F741D86327F59993002053F9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D86227F59993002053F9 /* Movie.swift */; };
+		F741D86627F59F40002053F9 /* JsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D86527F59F40002053F9 /* JsonResponse.swift */; };
+		F741D86827F5A0F1002053F9 /* TMDBParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D86727F5A0F1002053F9 /* TMDBParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		F741D85627F57D8C002053F9 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		F741D85827F57D9B002053F9 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		F741D85A27F57DDE002053F9 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F741D85C27F5816F002053F9 /* URL + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + ext.swift"; sourceTree = "<group>"; };
+		F741D85E27F581E1002053F9 /* TMDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBService.swift; sourceTree = "<group>"; };
+		F741D86027F58576002053F9 /* TMDBKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBKey.swift; sourceTree = "<group>"; };
+		F741D86227F59993002053F9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F741D86527F59F40002053F9 /* JsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonResponse.swift; sourceTree = "<group>"; };
+		F741D86727F5A0F1002053F9 /* TMDBParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,7 @@
 		F741D85227F57C5A002053F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F741D86427F59F2A002053F9 /* Json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +124,10 @@
 			children = (
 				F741D85527F57D76002053F9 /* Api */,
 				F741D85A27F57DDE002053F9 /* ApiError.swift */,
+				F741D86027F58576002053F9 /* TMDBKey.swift */,
+				F741D85C27F5816F002053F9 /* URL + ext.swift */,
+				F741D86727F5A0F1002053F9 /* TMDBParser.swift */,
+				F741D85E27F581E1002053F9 /* TMDBService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -122,6 +139,15 @@
 				F741D85827F57D9B002053F9 /* Session.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		F741D86427F59F2A002053F9 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				F741D86527F59F40002053F9 /* JsonResponse.swift */,
+				F741D86227F59993002053F9 /* Movie.swift */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,10 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F741D86127F58576002053F9 /* TMDBKey.swift in Sources */,
 				F741D85927F57D9B002053F9 /* Session.swift in Sources */,
+				F741D86327F59993002053F9 /* Movie.swift in Sources */,
+				F741D85D27F5816F002053F9 /* URL + ext.swift in Sources */,
 				F741D84527F57C3C002053F9 /* ContentView.swift in Sources */,
+				F741D86627F59F40002053F9 /* JsonResponse.swift in Sources */,
 				F741D85727F57D8C002053F9 /* HttpClient.swift in Sources */,
 				F741D85B27F57DDE002053F9 /* ApiError.swift in Sources */,
+				F741D86827F5A0F1002053F9 /* TMDBParser.swift in Sources */,
+				F741D85F27F581E1002053F9 /* TMDBService.swift in Sources */,
 				F741D84327F57C3C002053F9 /* MobilliumMovieAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
