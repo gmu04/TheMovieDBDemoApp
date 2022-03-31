@@ -51,10 +51,10 @@
 		F741D84127F57C3C002053F9 /* MobilliumMovieApp */ = {
 			isa = PBXGroup;
 			children = (
-				F741D84227F57C3C002053F9 /* MobilliumMovieAppApp.swift */,
-				F741D84427F57C3C002053F9 /* ContentView.swift */,
-				F741D84627F57C3F002053F9 /* Assets.xcassets */,
-				F741D84827F57C3F002053F9 /* Preview Content */,
+				F741D85327F57C5F002053F9 /* App */,
+				F741D85227F57C5A002053F9 /* Models */,
+				F741D85127F57C55002053F9 /* ViewModels */,
+				F741D85027F57C4D002053F9 /* Views */,
 			);
 			path = MobilliumMovieApp;
 			sourceTree = "<group>";
@@ -65,6 +65,38 @@
 				F741D84927F57C3F002053F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F741D85027F57C4D002053F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F741D84427F57C3C002053F9 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F741D85127F57C55002053F9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F741D85227F57C5A002053F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F741D85327F57C5F002053F9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F741D84227F57C3C002053F9 /* MobilliumMovieAppApp.swift */,
+				F741D84627F57C3F002053F9 /* Assets.xcassets */,
+				F741D84827F57C3F002053F9 /* Preview Content */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
