@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F741D83F27F57C3C002053F9 /* MobilliumMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilliumMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F741D83F27F57C3C002053F9 /* TheMovieDBDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieDBDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F741D84227F57C3C002053F9 /* MobilliumMovieAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilliumMovieAppApp.swift; sourceTree = "<group>"; };
 		F741D84427F57C3C002053F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F741D84627F57C3F002053F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		F741D83627F57C3C002053F9 = {
 			isa = PBXGroup;
 			children = (
-				F741D84127F57C3C002053F9 /* MobilliumMovieApp */,
+				F741D84127F57C3C002053F9 /* TheMovieDBDemoApp */,
 				F741D84027F57C3C002053F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,12 +61,12 @@
 		F741D84027F57C3C002053F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F741D83F27F57C3C002053F9 /* MobilliumMovieApp.app */,
+				F741D83F27F57C3C002053F9 /* TheMovieDBDemoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F741D84127F57C3C002053F9 /* MobilliumMovieApp */ = {
+		F741D84127F57C3C002053F9 /* TheMovieDBDemoApp */ = {
 			isa = PBXGroup;
 			children = (
 				F741D85327F57C5F002053F9 /* App */,
@@ -75,7 +75,7 @@
 				F741D85127F57C55002053F9 /* ViewModels */,
 				F741D85027F57C4D002053F9 /* Views */,
 			);
-			path = MobilliumMovieApp;
+			path = TheMovieDBDemoApp;
 			sourceTree = "<group>";
 		};
 		F741D84827F57C3F002053F9 /* Preview Content */ = {
@@ -153,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F741D83E27F57C3C002053F9 /* MobilliumMovieApp */ = {
+		F741D83E27F57C3C002053F9 /* TheMovieDBDemoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F741D84D27F57C3F002053F9 /* Build configuration list for PBXNativeTarget "MobilliumMovieApp" */;
+			buildConfigurationList = F741D84D27F57C3F002053F9 /* Build configuration list for PBXNativeTarget "TheMovieDBDemoApp" */;
 			buildPhases = (
 				F741D83B27F57C3C002053F9 /* Sources */,
 				F741D83C27F57C3C002053F9 /* Frameworks */,
@@ -165,9 +165,9 @@
 			);
 			dependencies = (
 			);
-			name = MobilliumMovieApp;
+			name = TheMovieDBDemoApp;
 			productName = MobilliumMovieApp;
-			productReference = F741D83F27F57C3C002053F9 /* MobilliumMovieApp.app */;
+			productReference = F741D83F27F57C3C002053F9 /* TheMovieDBDemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F741D83A27F57C3C002053F9 /* Build configuration list for PBXProject "MobilliumMovieApp" */;
+			buildConfigurationList = F741D83A27F57C3C002053F9 /* Build configuration list for PBXProject "TheMovieDBDemoApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -198,7 +198,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F741D83E27F57C3C002053F9 /* MobilliumMovieApp */,
+				F741D83E27F57C3C002053F9 /* TheMovieDBDemoApp */,
 			);
 		};
 /* End PBXProject section */
@@ -358,7 +358,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MobilliumMovieApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TheMovieDBDemoApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 85373584HZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -387,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MobilliumMovieApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TheMovieDBDemoApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 85373584HZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -412,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F741D83A27F57C3C002053F9 /* Build configuration list for PBXProject "MobilliumMovieApp" */ = {
+		F741D83A27F57C3C002053F9 /* Build configuration list for PBXProject "TheMovieDBDemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F741D84B27F57C3F002053F9 /* Debug */,
@@ -421,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F741D84D27F57C3F002053F9 /* Build configuration list for PBXNativeTarget "MobilliumMovieApp" */ = {
+		F741D84D27F57C3F002053F9 /* Build configuration list for PBXNativeTarget "TheMovieDBDemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F741D84E27F57C3F002053F9 /* Debug */,
