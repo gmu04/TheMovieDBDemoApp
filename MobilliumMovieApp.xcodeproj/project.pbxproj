@@ -11,6 +11,9 @@
 		F741D84527F57C3C002053F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D84427F57C3C002053F9 /* ContentView.swift */; };
 		F741D84727F57C3F002053F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F741D84627F57C3F002053F9 /* Assets.xcassets */; };
 		F741D84A27F57C3F002053F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F741D84927F57C3F002053F9 /* Preview Assets.xcassets */; };
+		F741D85727F57D8C002053F9 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D85627F57D8C002053F9 /* HttpClient.swift */; };
+		F741D85927F57D9B002053F9 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D85827F57D9B002053F9 /* Session.swift */; };
+		F741D85B27F57DDE002053F9 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D85A27F57DDE002053F9 /* ApiError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F741D84427F57C3C002053F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F741D84627F57C3F002053F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F741D84927F57C3F002053F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F741D85627F57D8C002053F9 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		F741D85827F57D9B002053F9 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F741D85A27F57DDE002053F9 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				F741D85327F57C5F002053F9 /* App */,
+				F741D85427F57D6E002053F9 /* Services */,
 				F741D85227F57C5A002053F9 /* Models */,
 				F741D85127F57C55002053F9 /* ViewModels */,
 				F741D85027F57C4D002053F9 /* Views */,
@@ -97,6 +104,24 @@
 				F741D84827F57C3F002053F9 /* Preview Content */,
 			);
 			name = App;
+			sourceTree = "<group>";
+		};
+		F741D85427F57D6E002053F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F741D85527F57D76002053F9 /* Api */,
+				F741D85A27F57DDE002053F9 /* ApiError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F741D85527F57D76002053F9 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				F741D85627F57D8C002053F9 /* HttpClient.swift */,
+				F741D85827F57D9B002053F9 /* Session.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F741D85927F57D9B002053F9 /* Session.swift in Sources */,
 				F741D84527F57C3C002053F9 /* ContentView.swift in Sources */,
+				F741D85727F57D8C002053F9 /* HttpClient.swift in Sources */,
+				F741D85B27F57DDE002053F9 /* ApiError.swift in Sources */,
 				F741D84327F57C3C002053F9 /* MobilliumMovieAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
