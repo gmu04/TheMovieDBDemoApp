@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F741D84327F57C3C002053F9 /* MobilliumMovieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D84227F57C3C002053F9 /* MobilliumMovieAppApp.swift */; };
+		F741D84327F57C3C002053F9 /* TheMovieDBDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D84227F57C3C002053F9 /* TheMovieDBDemoApp.swift */; };
 		F741D84527F57C3C002053F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D84427F57C3C002053F9 /* ContentView.swift */; };
 		F741D84727F57C3F002053F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F741D84627F57C3F002053F9 /* Assets.xcassets */; };
 		F741D84A27F57C3F002053F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F741D84927F57C3F002053F9 /* Preview Assets.xcassets */; };
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		F741D83F27F57C3C002053F9 /* TheMovieDBDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieDBDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F741D84227F57C3C002053F9 /* MobilliumMovieAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilliumMovieAppApp.swift; sourceTree = "<group>"; };
+		F741D84227F57C3C002053F9 /* TheMovieDBDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDBDemoApp.swift; sourceTree = "<group>"; };
 		F741D84427F57C3C002053F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F741D84627F57C3F002053F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F741D84927F57C3F002053F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		F741D85327F57C5F002053F9 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				F741D84227F57C3C002053F9 /* MobilliumMovieAppApp.swift */,
+				F741D84227F57C3C002053F9 /* TheMovieDBDemoApp.swift */,
 				F741D84627F57C3F002053F9 /* Assets.xcassets */,
 				F741D84827F57C3F002053F9 /* Preview Content */,
 			);
@@ -230,7 +230,7 @@
 				F741D85B27F57DDE002053F9 /* ApiError.swift in Sources */,
 				F741D86827F5A0F1002053F9 /* TMDBParser.swift in Sources */,
 				F741D85F27F581E1002053F9 /* TMDBService.swift in Sources */,
-				F741D84327F57C3C002053F9 /* MobilliumMovieAppApp.swift in Sources */,
+				F741D84327F57C3C002053F9 /* TheMovieDBDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +372,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.example.MobilliumMovieApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.example.TheMovieDBDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -401,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.example.MobilliumMovieApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.example.TheMovieDBDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

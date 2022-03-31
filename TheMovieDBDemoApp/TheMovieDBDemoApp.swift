@@ -1,9 +1,9 @@
-// MobilliumMovieAppApp.swift by Gokhan Mutlu on 31.03.2022
+// TheMovieDBDemoApp.swift by Gokhan Mutlu on 31.03.2022
 
 import SwiftUI
 
 @main
-struct MobilliumMovieAppApp: App {
+struct TheMovieDBDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
