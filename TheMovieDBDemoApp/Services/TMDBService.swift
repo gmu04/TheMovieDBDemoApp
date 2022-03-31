@@ -19,7 +19,7 @@ final class TMDBService<S:Session>{
 		guard let validUrl = URL.getTMDBUrl(.movie_upcoming(page)) else { fatalError("Url is not valid!") }
 		
 		//call API client to search
-		client.searchFor(url: validUrl){ result in
+		client.httpGetFor(url: validUrl){ result in
 			
 			switch result{
 				case .failure(let apiError):
@@ -27,9 +27,7 @@ final class TMDBService<S:Session>{
 				
 				case .success(let data):
 					
-					let result = TMDBParser().parse(data: data)
-
-					//return launches
+					let result = TMDBParser<JsonResponse>().parse(data: data)
 					if case let .success(jsonResponse) = result{
 						//print(JsonResponse)
 						completion(.success(jsonResponse))
@@ -42,6 +40,31 @@ final class TMDBService<S:Session>{
 		
 	}
 	
+	internal func getMovie(_ id:Int, completion:@escaping (Result<Movie, ApiError>)->()){
+		
+		guard let validUrl = URL.getTMDBUrl(.movie_id(id)) else { fatalError("Url is not valid!") }
+		
+		//call API client to search
+		client.httpGetFor(url: validUrl){ result in
+			
+			switch result{
+				case .failure(let apiError):
+					completion(.failure(apiError))
+				
+				case .success(let data):
+					let result = TMDBParser<Movie>().parse(data: data)
+
+					//return launches
+					if case let .success(movie) = result{
+						//print(JsonResponse)
+						completion(.success(movie))
+					}else{
+						completion(.failure(.jsonParsing("Check the logs...")))
+					}
+			}
+		}
+		
+	}
 	
 	
 	//MARK: - Properties

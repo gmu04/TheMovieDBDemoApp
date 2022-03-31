@@ -9,7 +9,7 @@ final class HttpClient<S:Session>{
 		self.session = session
 	}
 	
-	func searchFor(url:URL, completion:@escaping (Result<Data, ApiError>)->()){
+	func httpGetFor(url:URL, completion:@escaping (Result<Data, ApiError>)->()){
 		
 		let task = session.dataTask(with: url) { data, response, error in
 			guard let dataValid = data, error == nil else {

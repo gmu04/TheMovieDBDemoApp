@@ -4,7 +4,11 @@ import SwiftUI
 
 struct ContentView: View {
 	
-	init(){
+	/*
+	 
+	 //TEST
+	 
+	 init(){
 		let service = TMDBService(session: URLSession.shared)
 		service.getUpcomingMovies(by: 1) { result in
 			switch result{
@@ -17,7 +21,7 @@ struct ContentView: View {
 			}
 		}
 		
-	}
+	}*/
 	
     var body: some View {
 		VStack {

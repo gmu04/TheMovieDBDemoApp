@@ -3,9 +3,9 @@
 import Foundation
 
 
-struct TMDBParser:JSonParser{
+struct TMDBParser<T:Decodable>/*:JSonParser*/{
 	
-	func parse(data: Data) -> Result<T, TError> {
+	func parse(data: Data) -> Result<T, ApiError> {
 		let decoder = JSONDecoder()
 		do{
 			let apiResponse = try decoder.decode(T.self, from: data)
@@ -17,14 +17,14 @@ struct TMDBParser:JSonParser{
 		}
 	}
 	
-	typealias T = JsonResponse
-	typealias TError = ApiError
+//	typealias T = JsonResponse
+//	typealias TError = ApiError
 }
 
 
 
-protocol JSonParser{
-	associatedtype T
-	associatedtype TError:Error
-	func parse(data:Data) -> Result<T,TError>
-}
+//protocol JSonParser{
+//	associatedtype T
+//	associatedtype TError:Error
+//	func parse(data:Data) -> Result<T,TError>
+//}
