@@ -14,13 +14,13 @@ struct MovieListCellView: View {
 				Text(movieVM.name)
 					.font(.custom("SF Pro Text", size: 15))
 					.fontWeight(.bold)
-					.padding(8)
+					.padding(.vertical, 8)
 				
 				Text(movieVM.overviewShort)
 					.font(.custom("SF Pro Text", size: 13))
 					.fontWeight(.medium)
 					.foregroundColor(.gray)
-					.padding(8)
+					.padding(.vertical, 8)
 				
 				HStack {
 					Spacer()
@@ -30,6 +30,8 @@ struct MovieListCellView: View {
 						.foregroundColor(.gray)
 				}
 			}
+			//.background(Color.pink)
+			//.frame(maxWidth: .infinity)
 		}
 	}
 }

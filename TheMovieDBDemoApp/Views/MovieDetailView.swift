@@ -42,14 +42,15 @@ struct MovieDetailView: View {
     }
 	
 	
-	var backButton : some View { Button(action: {
+	var backButton: some View {
+		Button(action: {
 			self.presentationMode.wrappedValue.dismiss()
 			}) {
 				HStack {
-				Image("chevron.backward")
-					.aspectRatio(contentMode: .fit)
-					//.foregroundColor(.black)
-					Text("") //translated Back button title
+					Image(systemName: "chevron.backward")
+						.aspectRatio(contentMode: .fit)
+						//.foregroundColor(.black)
+					//Text("") //translated Back button title
 				}
 			}
 		}

@@ -26,6 +26,7 @@ struct AsyncImageView:View{
 						image
 							.resizable()
 							//.scaledToFill()
+							.frame(maxWidth: width, maxHeight: height)
 							
 					
 					case .failure:
@@ -34,6 +35,7 @@ struct AsyncImageView:View{
 								image
 									.resizable()
 									//.scaledToFill()
+									.frame(maxWidth: width, maxHeight: height)
 								
 							} else {
 								EmptyImage()

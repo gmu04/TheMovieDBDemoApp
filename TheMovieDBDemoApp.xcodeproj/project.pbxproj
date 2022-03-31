@@ -27,6 +27,7 @@
 		F741D87327F5DB01002053F9 /* MovieListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D87227F5DB01002053F9 /* MovieListCellView.swift */; };
 		F741D87527F5DEAB002053F9 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D87427F5DEAB002053F9 /* MovieDetailView.swift */; };
 		F741D87727F606BA002053F9 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D87627F606BA002053F9 /* MovieDetailViewModel.swift */; };
+		F741D87B27F62AEC002053F9 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D87A27F62AEC002053F9 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		F741D87227F5DB01002053F9 /* MovieListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCellView.swift; sourceTree = "<group>"; };
 		F741D87427F5DEAB002053F9 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		F741D87627F606BA002053F9 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		F741D87A27F62AEC002053F9 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				F741D86927F5CE5D002053F9 /* MovieListView.swift */,
 				F741D87227F5DB01002053F9 /* MovieListCellView.swift */,
 				F741D87427F5DEAB002053F9 /* MovieDetailView.swift */,
+				F741D87A27F62AEC002053F9 /* SliderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				F741D86827F5A0F1002053F9 /* TMDBParser.swift in Sources */,
 				F741D85F27F581E1002053F9 /* TMDBService.swift in Sources */,
 				F741D84327F57C3C002053F9 /* TheMovieDBDemoApp.swift in Sources */,
+				F741D87B27F62AEC002053F9 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

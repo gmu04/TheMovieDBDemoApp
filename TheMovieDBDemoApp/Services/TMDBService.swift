@@ -37,7 +37,32 @@ final class TMDBService<S:Session>{
 					
 			}
 		}
+	}
+	
+	internal func getNowPlayingMovies(by page:Int = 1, completion:@escaping (Result<JsonResponse, ApiError>)->()){
 		
+		//prepare search url - "8196754"
+		guard let validUrl = URL.getTMDBUrl(.now_playing) else { fatalError("Url is not valid!") }
+		
+		//call API client to search
+		client.httpGetFor(url: validUrl){ result in
+			
+			switch result{
+				case .failure(let apiError):
+					completion(.failure(apiError))
+				
+				case .success(let data):
+					
+					let result = TMDBParser<JsonResponse>().parse(data: data)
+					if case let .success(jsonResponse) = result{
+						//print(JsonResponse)
+						completion(.success(jsonResponse))
+					}else{
+						completion(.failure(.jsonParsing("Check the logs...")))
+					}
+					
+			}
+		}
 	}
 	
 	internal func getMovie(_ id:Int, completion:@escaping (Result<Movie, ApiError>)->()){
